@@ -1,27 +1,1549 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>給湯器の選び方</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【2025年最新】給湯器交換業者おすすめランキング10選</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2563eb;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #2563eb;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 0.75rem;
+        }
+        
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0.375rem;
+        }
+        
+        .point-card {
+            background-color: #f8fafc;
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .point-number {
+            background-color: #2563eb;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+        
+        .company-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .company-card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        
+        .rank-badge {
+            background-color: #fbbf24;
+            color: white;
+            font-weight: bold;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            margin-right: 0.75rem;
+        }
+        
+        .rank-1 {
+            background-color: #f59e0b;
+        }
+        
+        .rank-2 {
+            background-color: #6b7280;
+        }
+        
+        .rank-3 {
+            background-color: #b45309;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        
+        .star {
+            color: #f59e0b;
+            margin-right: 1px;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .feature-list li i {
+            color: #2563eb;
+            margin-right: 0.5rem;
+            margin-top: 0.25rem;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        table th, table td {
+            padding: 0.75rem 1rem;
+            border: 1px solid #e5e7eb;
+        }
+        
+        table th {
+            background-color: #f3f4f6;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .accordion {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+        }
+        
+        .accordion-header {
+            padding: 1rem 1.25rem;
+            background-color: #f8fafc;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .accordion-content {
+            padding: 1rem 1.25rem;
+            border-top: 1px solid #e5e7eb;
+            display: none;
+        }
+        
+        .accordion-content.active {
+            display: block;
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.875rem;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .chart {
+            background-color: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        
+        .chart-bars {
+            display: flex;
+            align-items: flex-end;
+            height: 220px;
+        }
+        
+        .chart-bar {
+            flex: 1;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .chart-bar:hover {
+            transform: translateY(-5px);
+        }
+        
+        .chart-bar-value {
+            background-color: #3b82f6;
+            border-radius: 4px 4px 0 0;
+            transition: all 0.3s ease;
+        }
+        
+        .chart-bar:hover .chart-bar-value {
+            background-color: #2563eb;
+        }
+        
+        .chart-bar-label {
+            text-align: center;
+            font-size: 0.75rem;
+            padding-top: 0.5rem;
+        }
+        
+        .pie-chart {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #2563eb 0% 41%,
+                #10b981 41% 77%,
+                #f59e0b 77% 89%,
+                #ef4444 89% 95%,
+                #6b7280 95% 100%
+            );
+            margin: 0 auto 1.5rem auto;
+        }
+        
+        .pie-legend {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .pie-legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+        }
+        
+        .pie-legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            margin-right: 0.5rem;
+        }
+        
+         {
+            .container {
+                max-width: none;
+                padding: 0;
+            }
+            
+            body {
+                background-color: #fff;
+            }
+            
+            .section {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #e5e7eb;
+            }
+        }
+    </style>
 </head>
 <body>
-<h1>給湯器の選び方</h1>
-<p>給湯器は家庭で毎日使用する大切な設備です。以下のポイントを参考に、ライフスタイルに合った製品を選びましょう。</p>
-
-<h2>1. 使用人数と湯量</h2>
-<p>家族の人数やお風呂に入るタイミングによって、必要な湯量が変わります。大家族なら大容量タイプが、少人数なら小容量タイプが適しています。</p>
-
-<h2>2. 設置場所</h2>
-<p>給湯器には屋外設置型と屋内設置型があります。設置スペースの広さや換気のしやすさを考慮して選びます。</p>
-
-<h2>3. 燃料の種類</h2>
-<p>ガス式、電気式、石油式など、燃料によってランニングコストが異なります。自宅の環境やランニングコストを比較して、最適なタイプを選びましょう。</p>
-
-<h2>4. 省エネ性能</h2>
-<p>最近の給湯器には省エネ機能を備えた製品が多くあります。年間の光熱費を抑えたい場合は、エネルギー消費効率の高いモデルがおすすめです。</p>
-
-<h2>5. メンテナンス性</h2>
-<p>長く使うためには日頃のメンテナンスが欠かせません。メンテナンスが容易なモデルや、サポート体制の整ったメーカーを選ぶと安心です。</p>
-
+    <div class="container">
+        <!-- Header -->
+        <header class="section">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center">【2025年最新】給湯器交換業者おすすめランキング10選</h1>
+            <p class="text-lg text-center mb-6">選び方のポイントと料金相場を徹底解説</p>
+            
+            <div class="highlight-box flex items-start">
+                <div class="mr-4">
+                    <i class="fas fa-exclamation-triangle text-2xl text-yellow-500"></i>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold mb-2">給湯器が故障したらすぐに対応を！</h2>
+                    <p>給湯器が壊れるとお湯が出なくなり、日常生活に大きな支障をきたします。特に寒い冬場は早急な対応が必要です。この記事では、信頼できる給湯器交換業者の選び方から人気ランキング、料金相場まで徹底解説します。</p>
+                </div>
+            </div>
+        </header>
+        
+        <!-- 記事の概要 -->
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-info-circle"></i>この記事でわかること
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-gray-50 p-4 rounded-lg flex">
+                    <i class="fas fa-check text-green-500 mr-2 flex-shrink-0"></i>
+                    <p>給湯器交換業者の失敗しない選び方5つのポイント</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex">
+                    <i class="fas fa-check text-green-500 mr-2 flex-shrink-0"></i>
+                    <p>2025年最新！おすすめ給湯器交換業者ランキング</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex">
+                    <i class="fas fa-check text-green-500 mr-2 flex-shrink-0"></i>
+                    <p>給湯器の種類別の料金相場と工事費用の内訳</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg flex">
+                    <i class="fas fa-check text-green-500 mr-2 flex-shrink-0"></i>
+                    <p>給湯器メーカー別の特徴と選び方のポイント</p>
+                </div>
+            </div>
+            
+            <!-- 目次 -->
+            <h2 class="section-title">
+                <i class="fas fa-list-alt"></i>目次
+            </h2>
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <ol class="list-decimal list-inside space-y-2">
+                    <li class="font-medium"><a href="#section1" class="text-blue-600 hover:underline">給湯器交換業者の失敗しない5つの選び方</a></li>
+                    <li class="font-medium"><a href="#section2" class="text-blue-600 hover:underline">給湯器交換はどこに頼むべき？依頼先の種類と特徴</a></li>
+                    <li class="font-medium"><a href="#section3" class="text-blue-600 hover:underline">【2025年最新】おすすめ給湯器交換業者ランキング10選</a></li>
+                    <li class="font-medium"><a href="#section4" class="text-blue-600 hover:underline">給湯器交換の料金相場と費用の内訳</a></li>
+                    <li class="font-medium"><a href="#section5" class="text-blue-600 hover:underline">給湯器メーカー別の特徴と選び方</a></li>
+                    <li class="font-medium"><a href="#section6" class="text-blue-600 hover:underline">給湯器の種類と選び方のポイント</a></li>
+                    <li class="font-medium"><a href="#section7" class="text-blue-600 hover:underline">給湯器交換に関するよくある質問</a></li>
+                    <li class="font-medium"><a href="#section8" class="text-blue-600 hover:underline">まとめ：自分に合った給湯器交換業者を選ぼう</a></li>
+                </ol>
+            </div>
+        </section>
+        
+        <!-- 選び方のポイント -->
+        <section id="section1" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-thumbs-up"></i>給湯器交換業者の失敗しない5つの選び方
+            </h2>
+            
+            <p class="mb-6">給湯器は10年に一度の大きな買い物です。後悔しない業者選びのために、以下の5つのポイントをしっかりチェックしましょう。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="point-card">
+                    <div class="flex items-center mb-4">
+                        <div class="point-number">1</div>
+                        <h3 class="text-xl font-bold">施工実績・事業継続期間</h3>
+                    </div>
+                    <p>給湯器交換の施工実績が豊富な業者を選びましょう。「年間1,000件以上」や「累計数万件以上」の実績があれば安心です。また、長年事業を継続している会社は信頼性が高いと判断できます。公式サイトで施工例やお客様の声を確認しましょう。</p>
+                </div>
+                
+                <div class="point-card">
+                    <div class="flex items-center mb-4">
+                        <div class="point-number">2</div>
+                        <h3 class="text-xl font-bold">費用相場</h3>
+                    </div>
+                    <p>給湯器交換の費用相場は5〜25万円程度です。複数の業者から見積もりを取り、比較検討することが大切です。給湯器は価格競争が激しく、8〜9割引きで提供する会社もあります。公式サイトで価格を確認し、適正価格かどうか判断しましょう。</p>
+                </div>
+                
+                <div class="point-card">
+                    <div class="flex items-center mb-4">
+                        <div class="point-number">3</div>
+                        <h3 class="text-xl font-bold">保証内容・期間</h3>
+                    </div>
+                    <p>給湯器には「機器自体の保証」と「工事に関する保証」の2種類があります。近年は10年保証を謳う会社が増えていますが、内容をしっかり確認しましょう。「給湯器自体の保証は3年で、工事保証が10年」といったケースもあります。保証が充実した業者を選ぶことが重要です。</p>
+                </div>
+                
+                <div class="point-card">
+                    <div class="flex items-center mb-4">
+                        <div class="point-number">4</div>
+                        <h3 class="text-xl font-bold">対応力（受付時間・エリア・取扱メーカー）</h3>
+                    </div>
+                    <p>業者によって対応エリアや受付時間、取り扱いメーカーが異なります。自宅周辺に対応しているか、自分が在宅できる時間帯に対応可能か、現在使用している給湯器のメーカーを取り扱っているかを確認しましょう。「最短30分対応」など、トラブル時の迅速な対応も重要なポイントです。</p>
+                </div>
+                
+                <div class="point-card md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="point-number">5</div>
+                        <h3 class="text-xl font-bold">口コミ・評判</h3>
+                    </div>
+                    <p>実際に施工してもらった方の口コミや評判は非常に重要です。対応の良さや施工の仕上がりは利用者にしかわからないことが多いため、公式サイトのお客様の声や比較サイトの口コミをチェックしましょう。施工後のトラブルを避けるためにも、実際の利用者の声は必ず確認すべきポイントです。</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 依頼先の種類と特徴 -->
+        <section id="section2" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-home"></i>給湯器交換はどこに頼むべき？依頼先の種類と特徴
+            </h2>
+            
+            <p class="mb-6">給湯器交換を依頼できる主な業者は4種類あります。それぞれの特徴を理解して、自分に合った業者を選びましょう。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-bolt text-yellow-500 mr-2"></i>ガス会社
+                    </h3>
+                    <div class="mb-4">
+                        <h4 class="font-bold text-blue-600">メリット</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>安心感・信頼性が高い</li>
+                            <li>緊急時の迅速な対応</li>
+                            <li>ガス機器に関する知識が豊富</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-red-600">デメリット</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>交換・修理の費用が高めになりがち</li>
+                            <li>対応可能な時間帯が限られる場合がある</li>
+                            <li>選べる給湯器の種類が限定的</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-thermometer-half text-red-500 mr-2"></i>給湯器メーカー
+                    </h3>
+                    <div class="mb-4">
+                        <h4 class="font-bold text-blue-600">メリット</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>365日24時間対応が多い</li>
+                            <li>製品に関する専門知識が豊富</li>
+                            <li>保証期間内なら無償対応の可能性</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-red-600">デメリット</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>そのメーカーの製品しか選べない</li>
+                            <li>実際の施工は提携業者が行うケースが多い</li>
+                            <li>費用が割高になる傾向がある</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-truck text-green-500 mr-2"></i>ネット通販
+                    </h3>
+                    <div class="mb-4">
+                        <h4 class="font-bold text-blue-600">メリット</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>給湯器本体の価格が安い</li>
+                            <li>多様な製品から選べる</li>
+                            <li>自分のペースで比較検討できる</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-red-600">デメリット</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>取付業者を別で探す手間がかかる</li>
+                            <li>取付のみの依頼は割高になりがち</li>
+                            <li>給湯器の知識がないと選びにくい</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-bars text-blue-500 mr-2"></i>給湯器専門の交換業者
+                    </h3>
+                    <div class="mb-4">
+                        <h4 class="font-bold text-blue-600">メリット</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>複数メーカーの給湯器を取り扱っている</li>
+                            <li>本体価格の割引率が高い（最大8〜9割引）</li>
+                            <li>充実したサービスと保証が多い</li>
+                            <li>24時間365日対応の業者が多い</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-red-600">デメリット</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>業者によって対応品質にばらつきがある</li>
+                            <li>地域によっては対応していない場合がある</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box bg-blue-50">
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                    <i class="fas fa-award text-amber-500 mr-2"></i>おすすめは「給湯器専門の交換業者」
+                </h3>
+                <p class="mb-4">給湯器が壊れた場合、最もおすすめなのは「給湯器専門の交換業者」です。複数のメーカーから選べる自由度、価格の安さ、充実したサービスと保証のバランスが優れています。特に緊急時には、24時間365日対応している業者が多く、当日や翌日に対応してくれる場合もあります。</p>
+                <p>ただし、業者選びは慎重に行い、複数の業者から見積もりを取って比較検討することをおすすめします。</p>
+            </div>
+        </section>
+        
+        <!-- おすすめランキング -->
+        <section id="section3" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-award"></i>【2025年最新】おすすめ給湯器交換業者ランキング10選
+            </h2>
+            
+            <p class="mb-6">全国各地で対応している給湯器交換業者の中から、特に評判の良い10社をランキング形式でご紹介します。保証内容や対応エリア、取扱メーカー数などを総合的に評価しています。</p>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-bold mb-4">給湯器交換業者 総合評価ランキング</h3>
+                
+                <div class="chart mb-6">
+                    <div class="chart-bars">
+                        <div class="chart-bar">
+                            <div class="chart-bar-value bg-red-400" style="height: 96%;">
+                                <div class="p-2 text-white text-center">4.8</div>
+                            </div>
+                            <div class="chart-bar-label">キンライサー</div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="chart-bar-value bg-teal-400" style="height: 94%;">
+                                <div class="p-2 text-white text-center">4.7</div>
+                            </div>
+                            <div class="chart-bar-label">街角給湯器</div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="chart-bar-value bg-yellow-400" style="height: 92%;">
+                                <div class="p-2 text-white text-center">4.6</div>
+                            </div>
+                            <div class="chart-bar-label">給湯器駆けつけ隊</div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="chart-bar-value bg-green-400" style="height: 90%;">
+                                <div class="p-2 text-white text-center">4.5</div>
+                            </div>
+                            <div class="chart-bar-label">湯ドクター</div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="chart-bar-value bg-blue-400" style="height: 88%;">
+                                <div class="p-2 text-white text-center">4.4</div>
+                            </div>
+                            <div class="chart-bar-label">正直屋</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="overflow-x-auto mb-8">
+                <table class="min-w-full">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th>順位</th>
+                            <th>会社名</th>
+                            <th>対応エリア</th>
+                            <th>取扱メーカー</th>
+                            <th>24時間対応</th>
+                            <th>商品保証</th>
+                            <th>工事保証</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-yellow-50">
+                            <td class="font-bold">1位</td>
+                            <td class="font-bold">キンライサー</td>
+                            <td>全国</td>
+                            <td>4社</td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                            <td>10年（無料）</td>
+                            <td>10年（無料）</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">2位</td>
+                            <td>街角給湯器</td>
+                            <td>関東・東海・関西・九州</td>
+                            <td>10社</td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                            <td>10年（無料）</td>
+                            <td>10年（無料）</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">3位</td>
+                            <td>給湯器駆けつけ隊</td>
+                            <td>24都道府県（関西〜北海道）</td>
+                            <td>10社</td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                            <td>10年（無料）</td>
+                            <td>10年（無料）</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">4位</td>
+                            <td>湯ドクター</td>
+                            <td>全国</td>
+                            <td>10社</td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                            <td>メーカー7年（無料）</td>
+                            <td>10年（無料）</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">5位</td>
+                            <td>正直屋</td>
+                            <td>32都府県</td>
+                            <td>3社</td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                            <td>10年（有料）</td>
+                            <td>10年（無料）</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">6位</td>
+                            <td>イースマイル</td>
+                            <td>38都道府県</td>
+                            <td>3社</td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                            <td>最長10年（3年以上は有料）</td>
+                            <td>最長12年</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">7位</td>
+                            <td>交換できるくん</td>
+                            <td>21都道府県（九州〜北海道）</td>
+                            <td>4社</td>
+                            <td><i class="fas fa-bars text-red-500"></i></td>
+                            <td>10年</td>
+                            <td>10年</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">8位</td>
+                            <td>ガスペック</td>
+                            <td>23都道府県</td>
+                            <td>4社</td>
+                            <td><i class="fas fa-bars text-red-500"></i></td>
+                            <td>10年</td>
+                            <td>10年</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">9位</td>
+                            <td>クラシアン</td>
+                            <td>全国</td>
+                            <td>主要メーカー</td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                            <td>メーカー保証</td>
+                            <td>1年</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">10位</td>
+                            <td>マーレ</td>
+                            <td>関東（東京、埼玉、神奈川、千葉、茨城、栃木、群馬、山梨）</td>
+                            <td>主要メーカー</td>
+                            <td><i class="fas fa-check text-green-500"></i></td>
+                            <td>メーカー保証</td>
+                            <td>1年</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-bold mb-4">人気上位5社の詳細比較</h3>
+                
+                <div class="company-card bg-yellow-50 border border-yellow-200">
+                    <div class="flex flex-col md:flex-row md:items-center mb-4">
+                        <div class="flex items-center mb-2 md:mb-0 md:mr-4">
+                            <i class="fas fa-award text-yellow-500 mr-2"></i>
+                            <h4 class="text-lg font-bold">1位：キンライサー</h4>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="far fa-star"></i></div>
+                            <span class="ml-1 text-sm">4.8/5.0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">主な特徴</h5>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>全国対応</li>
+                                <li>24時間365日受付</li>
+                                <li>最短即日対応</li>
+                                <li>10年保証（無料）</li>
+                                <li>4社の給湯器取扱い</li>
+                                <li>最大80%OFF</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">料金目安</h5>
+                            <p class="text-lg font-bold">149,000円〜</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">保証・サポート</h5>
+                            <p><span class="font-bold">保証：</span>10年（無料）</p>
+                            <p><span class="font-bold">受付：</span>24時間365日</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded border border-yellow-200">
+                        <h5 class="font-bold mb-2 flex items-center">
+                            <i class="fas fa-thumbs-up text-green-500 mr-1"></i>おすすめポイント
+                        </h5>
+                        <p>全国対応で24時間365日受付、最短即日対応が可能な点が最大の魅力です。10年間の商品保証と工事保証が無料で付いており、保証内容も「修理総額無制限」と充実しています。交換の依頼も給湯器の写真を撮って送るだけと簡単で、工事実績も20万件を超える信頼性の高さが評価されています。</p>
+                    </div>
+                </div>
+                
+                <div class="company-card bg-gray-50">
+                    <div class="flex flex-col md:flex-row md:items-center mb-4">
+                        <div class="flex items-center mb-2 md:mb-0 md:mr-4">
+                            <h4 class="text-lg font-bold">2位：街角給湯器</h4>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="far fa-star"></i></div>
+                            <span class="ml-1 text-sm">4.7/5.0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">主な特徴</h5>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>関東・東海・関西・九州対応</li>
+                                <li>24時間365日受付</li>
+                                <li>最短30分で駆けつけ</li>
+                                <li>10年保証（無料）</li>
+                                <li>10社の給湯器取扱い</li>
+                                <li>最大92%OFF</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">料金目安</h5>
+                            <p class="text-lg font-bold">145,000円〜</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">保証・サポート</h5>
+                            <p><span class="font-bold">保証：</span>10年（無料）</p>
+                            <p><span class="font-bold">受付：</span>24時間365日</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="company-card bg-gray-50">
+                    <div class="flex flex-col md:flex-row md:items-center mb-4">
+                        <div class="flex items-center mb-2 md:mb-0 md:mr-4">
+                            <h4 class="text-lg font-bold">3位：給湯器駆けつけ隊</h4>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="far fa-star"></i></div>
+                            <span class="ml-1 text-sm">4.6/5.0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">主な特徴</h5>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>24都道府県対応</li>
+                                <li>24時間365日受付</li>
+                                <li>最短30分で駆けつけ</li>
+                                <li>10年保証（無料）</li>
+                                <li>10社の給湯器取扱い</li>
+                                <li>年間施工実績1万件</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">料金目安</h5>
+                            <p class="text-lg font-bold">150,000円〜</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">保証・サポート</h5>
+                            <p><span class="font-bold">保証：</span>10年（無料）</p>
+                            <p><span class="font-bold">受付：</span>24時間365日</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="company-card bg-gray-50">
+                    <div class="flex flex-col md:flex-row md:items-center mb-4">
+                        <div class="flex items-center mb-2 md:mb-0 md:mr-4">
+                            <h4 class="text-lg font-bold">4位：湯ドクター</h4>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="far fa-star"></i></div>
+                            <span class="ml-1 text-sm">4.5/5.0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">主な特徴</h5>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>全国対応</li>
+                                <li>24時間365日受付</li>
+                                <li>創業90年の老舗</li>
+                                <li>メーカー7年保証（無料）</li>
+                                <li>10社の給湯器取扱い</li>
+                                <li>累計施工実績8万件以上</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">料金目安</h5>
+                            <p class="text-lg font-bold">155,000円〜</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">保証・サポート</h5>
+                            <p><span class="font-bold">保証：</span>メーカー7年（無料）＋工事10年（無料）</p>
+                            <p><span class="font-bold">受付：</span>24時間365日</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="company-card bg-gray-50">
+                    <div class="flex flex-col md:flex-row md:items-center mb-4">
+                        <div class="flex items-center mb-2 md:mb-0 md:mr-4">
+                            <h4 class="text-lg font-bold">5位：正直屋</h4>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="fas fa-star"></i></div>
+                            <div class="star"><i class="far fa-star"></i></div>
+                            <span class="ml-1 text-sm">4.4/5.0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">主な特徴</h5>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>32都府県対応</li>
+                                <li>24時間365日受付</li>
+                                <li>100店舗以上を展開</li>
+                                <li>10年保証（有料）</li>
+                                <li>3社の給湯器取扱い</li>
+                                <li>累計施工実績10万件超</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">料金目安</h5>
+                            <p class="text-lg font-bold">140,000円〜</p>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-600 mb-1">保証・サポート</h5>
+                            <p><span class="font-bold">保証：</span>10年（有料）</p>
+                            <p><span class="font-bold">受付：</span>24時間365日</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 料金相場 -->
+        <section id="section4" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-dollar-sign"></i>給湯器交換の料金相場と費用の内訳
+            </h2>
+            
+            <p class="mb-6">給湯器交換にかかる費用は、給湯器本体の価格と工事費用に分けられます。種類や号数、機能によって価格が大きく変わるため、予算に合わせた選択が重要です。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">給湯器本体の価格相場</h3>
+                    <div class="chart">
+                        <div class="chart-bars">
+                            <div class="chart-bar">
+                                <div class="chart-bar-value" style="height: 60%;">
+                                    <div class="p-2 text-white text-center">17〜20万円</div>
+                                </div>
+                                <div class="chart-bar-label">エコジョーズ</div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-bar-value" style="height: 45%;">
+                                    <div class="p-2 text-white text-center">12〜14万円</div>
+                                </div>
+                                <div class="chart-bar-label">従来型給湯器</div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-bar-value" style="height: 80%;">
+                                    <div class="p-2 text-white text-center">40〜60万円</div>
+                                </div>
+                                <div class="chart-bar-label">エコキュート</div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-bar-value" style="height: 50%;">
+                                    <div class="p-2 text-white text-center">14〜17万円</div>
+                                </div>
+                                <div class="chart-bar-label">石油給湯器</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">工事費用の内訳</h3>
+                    <div class="chart">
+                        <div class="chart-bars">
+                            <div class="chart-bar">
+                                <div class="chart-bar-value bg-green-500" style="height: 75%;">
+                                    <div class="p-2 text-white text-center">3〜5万円</div>
+                                </div>
+                                <div class="chart-bar-label">標準工事費</div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-bar-value bg-green-500" style="height: 35%;">
+                                    <div class="p-2 text-white text-center">1〜3万円</div>
+                                </div>
+                                <div class="chart-bar-label">追加工事費</div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="chart-bar-value bg-green-500" style="height: 15%;">
+                                    <div class="p-2 text-white text-center">0.5〜1万円</div>
+                                </div>
+                                <div class="chart-bar-label">処分費</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="overflow-x-auto mb-8">
+                <table class="min-w-full">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th>給湯器の種類</th>
+                            <th>本体価格</th>
+                            <th>標準工事費</th>
+                            <th>合計費用目安</th>
+                            <th>特徴</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>給湯専用（16号）</td>
+                            <td>5〜8万円</td>
+                            <td>3〜5万円</td>
+                            <td>8〜13万円</td>
+                            <td>シンプルな給湯のみの機能、単身世帯向け</td>
+                        </tr>
+                        <tr>
+                            <td>ガスふろ給湯器（20号）</td>
+                            <td>10〜15万円</td>
+                            <td>4〜6万円</td>
+                            <td>14〜21万円</td>
+                            <td>給湯と追い焚き機能付き、2人家族向け</td>
+                        </tr>
+                        <tr>
+                            <td>ガスふろ給湯器（24号）</td>
+                            <td>12〜18万円</td>
+                            <td>4〜6万円</td>
+                            <td>16〜24万円</td>
+                            <td>給湯と追い焚き機能付き、4人以上家族向け</td>
+                        </tr>
+                        <tr>
+                            <td>エコジョーズ（24号）</td>
+                            <td>15〜20万円</td>
+                            <td>5〜7万円</td>
+                            <td>20〜27万円</td>
+                            <td>省エネタイプ、ガス代を約13%削減</td>
+                        </tr>
+                        <tr>
+                            <td>給湯暖房熱源機</td>
+                            <td>20〜25万円</td>
+                            <td>5〜8万円</td>
+                            <td>25〜33万円</td>
+                            <td>給湯・追い焚き・床暖房などの暖房機能付き</td>
+                        </tr>
+                        <tr>
+                            <td>エコキュート</td>
+                            <td>40〜60万円</td>
+                            <td>10〜15万円</td>
+                            <td>50〜75万円</td>
+                            <td>電気式、ランニングコストが安い、オール電化向け</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded-lg mb-8">
+                <h3 class="text-xl font-bold mb-4">工事費用に含まれる内容</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <h4 class="font-bold mb-2">標準工事費に含まれるもの</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>既存給湯器の取り外し</li>
+                            <li>新しい給湯器の設置</li>
+                            <li>配管接続工事</li>
+                            <li>リモコン取り付け</li>
+                            <li>動作確認</li>
+                            <li>既存給湯器の処分</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2">追加費用が発生するケース</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>配管の延長・移設が必要な場合</li>
+                            <li>壁の補修が必要な場合</li>
+                            <li>電気工事が必要な場合</li>
+                            <li>特殊な場所への設置</li>
+                            <li>休日・夜間の緊急対応</li>
+                            <li>遠隔地への出張費</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box bg-blue-50">
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                    <i class="fas fa-thumbs-up text-green-500 mr-2"></i>費用を抑えるポイント
+                </h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><span class="font-bold">複数の業者から見積もりを取る：</span>同じ給湯器でも業者によって価格が大きく異なります。最低でも3社以上から見積もりを取りましょう。</li>
+                    <li><span class="font-bold">給湯器専門の交換業者を選ぶ：</span>ガス会社やメーカーよりも、専門業者の方が本体価格の割引率が高い傾向にあります。</li>
+                    <li><span class="font-bold">キャンペーン時期を狙う：</span>年度末や決算期など、キャンペーンを実施している時期を狙うとお得です。</li>
+                    <li><span class="font-bold">補助金制度を活用する：</span>エコジョーズやエコキュートなどの省エネ機器は、自治体によっては補助金が出る場合があります。</li>
+                    <li><span class="font-bold">必要な機能だけを選ぶ：</span>使わない機能がついた高機能モデルを選ぶと無駄な出費になります。自分のライフスタイルに合った機能を選びましょう。</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- メーカー別特徴 -->
+        <section id="section5" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-wrench"></i>給湯器メーカー別の特徴と選び方
+            </h2>
+            
+            <p class="mb-6">給湯器メーカーによって特徴や強みが異なります。主要メーカーの特徴を理解して、自分に合ったメーカーを選びましょう。</p>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-bold mb-4">給湯器メーカーのシェア率</h3>
+                <div class="flex justify-center items-center mb-4">
+                    <div class="pie-chart"></div>
+                </div>
+                <div class="pie-legend">
+                    <div class="pie-legend-item">
+                        <div class="pie-legend-color bg-blue-500"></div>
+                        <span>リンナイ 41%</span>
+                    </div>
+                    <div class="pie-legend-item">
+                        <div class="pie-legend-color bg-green-500"></div>
+                        <span>ノーリツ 36%</span>
+                    </div>
+                    <div class="pie-legend-item">
+                        <div class="pie-legend-color bg-yellow-500"></div>
+                        <span>パロマ 12%</span>
+                    </div>
+                    <div class="pie-legend-item">
+                        <div class="pie-legend-color bg-red-500"></div>
+                        <span>パーパス 6%</span>
+                    </div>
+                    <div class="pie-legend-item">
+                        <div class="pie-legend-color bg-gray-500"></div>
+                        <span>その他 5%</span>
+                    </div>
+                </div>
+                <p class="text-sm text-center text-gray-500">※参考：リフォーム産業新聞「ガス給湯器・ガス風呂給湯機市場」</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-star text-yellow-500 mr-2"></i>リンナイ
+                    </h3>
+                    <div class="mb-4">
+                        <h4 class="font-bold text-blue-600">特徴</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>国内シェアトップ（約41%）</li>
+                            <li>省エネ性と環境性能に優れた製品が多い</li>
+                            <li>「技術のリンナイ」と呼ばれる高品質な製品</li>
+                            <li>「ゆらぎシャワー機能」など快適性を追求</li>
+                            <li>軽量コンパクトな給湯器を開発</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-blue-600">おすすめポイント</h4>
+                        <p>リモコンの操作性が良く、機能が充実しているため、お風呂が好きな方や高機能を求める方におすすめです。</p>
+                    </div>
+                </div>
+                
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-star text-yellow-500 mr-2"></i>ノーリツ
+                    </h3>
+                    <div class="mb-4">
+                        <h4 class="font-bold text-blue-600">特徴</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>国内シェア2位（約36%）</li>
+                            <li>サビに強い内部構造（長寿命）</li>
+                            <li>エコファースト制度認定企業</li>
+                            <li>CO2排出量とガス使用量を15%削減</li>
+                            <li>メンテナンス性に優れた設計</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-blue-600">おすすめポイント</h4>
+                        <p>サビに強く長寿命な製品が多いため、長く使いたい方や環境に配慮した製品を求める方におすすめです。</p>
+                    </div>
+                </div>
+                
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-star text-yellow-500 mr-2"></i>パロマ
+                    </h3>
+                    <div class="mb-4">
+                        <h4 class="font-bold text-blue-600">特徴</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>古参の給湯器メーカー</li>
+                            <li>アメリカでも高いシェア率</li>
+                            <li>一貫生産体制による安定した品質</li>
+                            <li>シンプルで使いやすいリモコン</li>
+                            <li>登録制の有料点検サービスあり</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-blue-600">おすすめポイント</h4>
+                        <p>シンプルな操作性と安定した品質を求める方、アフターサービスを重視する方におすすめです。</p>
+                    </div>
+                </div>
+                
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <i class="fas fa-star text-yellow-500 mr-2"></i>パーパス
+                    </h3>
+                    <div class="mb-4">
+                        <h4 class="font-bold text-blue-600">特徴</h4>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>日本初のエコジョーズ機器を開発</li>
+                            <li>環境・省エネ性能に優れた製品</li>
+                            <li>アフターメンテナンスが充実</li>
+                            <li>24時間年中無休の修理受付</li>
+                            <li>大阪ガス品質大賞を4年連続受賞</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-blue-600">おすすめポイント</h4>
+                        <p>環境に配慮した製品を求める方、アフターサービスを重視する方におすすめです。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box bg-blue-50">
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                    <i class="fas fa-thumbs-up text-green-500 mr-2"></i>メーカー選びのポイント
+                </h3>
+                <p class="mb-4">給湯器メーカーを選ぶ際は、以下のポイントを考慮すると良いでしょう。</p>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><span class="font-bold">リモコンの使いやすさ：</span>毎日使うものなので、操作性は重要です。リンナイとノーリツではリモコンのデザインや操作感が異なります。</li>
+                    <li><span class="font-bold">保証期間：</span>メーカーによって標準保証期間が異なります。長期保証を重視する場合は、保証内容をしっかり確認しましょう。</li>
+                    <li><span class="font-bold">アフターサービス：</span>修理対応の速さや部品の供給期間なども重要です。パーパスやパロマはアフターサービスに力を入れています。</li>
+                    <li><span class="font-bold">省エネ性能：</span>エコジョーズなどの省エネタイプを選ぶと、ランニングコストを抑えられます。各メーカーの省エネ技術を比較しましょう。</li>
+                    <li><span class="font-bold">現在使用中のメーカー：</span>同じメーカーの給湯器に交換すると、配管などの互換性があり、工事費用を抑えられる場合があります。</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- 給湯器の種類 -->
+        <section id="section6" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-tint"></i>給湯器の種類と選び方のポイント
+            </h2>
+            
+            <p class="mb-6">給湯器にはさまざまな種類があり、それぞれに特徴があります。自分のライフスタイルや住環境に合った給湯器を選びましょう。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3">熱源による分類</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-blue-600">ガス給湯器</h4>
+                            <p class="mb-2">都市ガスやプロパンガスを燃料とする最も一般的なタイプ。</p>
+                            <ul class="list-disc list-inside ml-2 space-y-1 text-sm">
+                                <li>瞬間的にお湯が沸かせる</li>
+                                <li>設置スペースが小さい</li>
+                                <li>初期費用が比較的安い</li>
+                                <li>エコジョーズタイプは省エネ性能が高い</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-600">電気給湯器（エコキュート）</h4>
+                            <p class="mb-2">空気の熱を利用して効率的にお湯を沸かす省エネタイプ。</p>
+                            <ul class="list-disc list-inside ml-2 space-y-1 text-sm">
+                                <li>ランニングコストが安い</li>
+                                <li>CO2排出量が少ない</li>
+                                <li>深夜電力を利用できる</li>
+                                <li>設置スペースが大きい</li>
+                                <li>初期費用が高い</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-600">石油給湯器</h4>
+                            <p class="mb-2">灯油を燃料とするタイプ。寒冷地で多く使用されています。</p>
+                            <ul class="list-disc list-inside ml-2 space-y-1 text-sm">
+                                <li>給湯能力が高い</li>
+                                <li>寒冷地でも安定して使用できる</li>
+                                <li>燃料費が変動しやすい</li>
+                                <li>排気臭や動作音がある</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3">機能による分類</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-blue-600">給湯専用</h4>
+                            <p class="mb-2">蛇口からお湯を出す機能のみを持つシンプルなタイプ。</p>
+                            <ul class="list-disc list-inside ml-2 space-y-1 text-sm">
+                                <li>価格が安い</li>
+                                <li>設置が簡単</li>
+                                <li>追い焚き機能がない</li>
+                                <li>単身世帯や集合住宅向け</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-600">ガスふろ給湯器</h4>
+                            <p class="mb-2">給湯と追い焚き機能を備えたタイプ。</p>
+                            <ul class="list-disc list-inside ml-2 space-y-1 text-sm">
+                                <li>お風呂の追い焚きができる</li>
+                                <li>オートタイプ：湯はり、追い焚き、保温が自動</li>
+                                <li>フルオートタイプ：たし湯も自動</li>
+                                <li>一般家庭向け</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-600">給湯暖房熱源機</h4>
+                            <p class="mb-2">給湯・追い焚きに加え、床暖房などの暖房機能も備えたタイプ。</p>
+                            <ul class="list-disc list-inside ml-2 space-y-1 text-sm">
+                                <li>1台で給湯と暖房ができる</li>
+                                <li>床暖房やパネルヒーターに対応</li>
+                                <li>価格が高い</li>
+                                <li>寒冷地や暖房設備を重視する家庭向け</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3">号数による分類</h3>
+                    <p class="mb-4">号数とは、1分間に出るお湯（25℃上昇）の量を表します。家族の人数や使用状況に合わせて選びましょう。</p>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-blue-600">16号</h4>
+                            <p>1分間に16リットルのお湯を供給。単身世帯や2人家族向け。</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-600">20号</h4>
+                            <p>1分間に20リットルのお湯を供給。2〜3人家族向け。冬以外なら複数箇所での同時使用も可能。</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-600">24号</h4>
+                            <p>1分間に24リットルのお湯を供給。4人以上の家族向け。複数箇所での同時使用に対応。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="point-card">
+                    <h3 class="text-xl font-bold mb-3">設置タイプによる分類</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-blue-600">壁掛タイプ</h4>
+                            <p class="mb-2">外壁に取り付けるタイプ。最も一般的な設置方法です。</p>
+                            <ul class="list-disc list-inside ml-2 space-y-1 text-sm">
+                                <li>スペースを取らない</li>
+                                <li>設置工事が比較的簡単</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-600">PS（パイプシャフト）設置タイプ</h4>
+                            <p class="mb-2">マンションなどのパイプスペース内に設置するタイプ。</p>
+                            <ul class="list-disc list-inside ml-2 space-y-1 text-sm">
+                                <li>外観を損なわない</li>
+                                <li>マンションに多い</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-600">据置タイプ</h4>
+                            <p class="mb-2">地面に直接設置するタイプ。</p>
+                            <ul class="list-disc list-inside ml-2 space-y-1 text-sm">
+                                <li>壁に負担をかけない</li>
+                                <li>大型の給湯器に適している</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box bg-blue-50">
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                    <i class="fas fa-thumbs-up text-green-500 mr-2"></i>給湯器選びのポイント
+                </h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><span class="font-bold">家族の人数：</span>人数が多いほど大きな号数（24号など）を選びましょう。</li>
+                    <li><span class="font-bold">使用状況：</span>キッチンとお風呂を同時に使うことが多い場合は、給湯能力の高いものを選びましょう。</li>
+                    <li><span class="font-bold">設置スペース：</span>設置場所のサイズに合った給湯器を選びましょう。特にエコキュートは大きなスペースが必要です。</li>
+                    <li><span class="font-bold">予算：</span>初期費用だけでなく、ランニングコストも考慮して選びましょう。エコジョーズやエコキュートは初期費用は高いですが、長期的には経済的です。</li>
+                    <li><span class="font-bold">住宅の種類：</span>マンションの場合、管理規約で設置できる給湯器が限られる場合があります。事前に確認しましょう。</li>
+                    <li><span class="font-bold">地域の気候：</span>寒冷地では凍結防止機能付きの給湯器や、給湯能力の高いものを選びましょう。</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- よくある質問 -->
+        <section id="section7" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-question-circle"></i>給湯器交換に関するよくある質問
+            </h2>
+            
+            <div class="space-y-6">
+                <div class="accordion" id="accordion-1">
+                    <div class="accordion-header" onclick="toggleAccordion('accordion-1')">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i class="fas fa-question-circle text-blue-500 mr-2"></i>給湯器の取り付けは自分でできる？
+                        </h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="mb-4"><span class="font-bold text-red-500">給湯器の交換作業は、個人では絶対にしてはいけません。</span></p>
+                        <p class="mb-2">給湯器の交換には、以下のような複数の資格が必要です：</p>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>ガス機器設置スペシャリスト</li>
+                            <li>液化石油ガス設備士</li>
+                            <li>給水装置工事主任技術者</li>
+                        </ul>
+                        <p class="mt-4">さらに、ガスを扱う場合は危険が伴うため、必ず専門の業者に依頼しましょう。無資格での工事は法律違反となる場合もあります。</p>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="accordion-2">
+                    <div class="accordion-header" onclick="toggleAccordion('accordion-2')">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i class="fas fa-question-circle text-blue-500 mr-2"></i>給湯器には交換の目安がある？
+                        </h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="mb-4"><span class="font-bold">給湯器の交換は、10年に一度を目安</span>にするのが一般的です。</p>
+                        <p>給湯器の業界自体、10年程度で新しい製品を発売したり、製造終了したりします。給湯器を10年前後使っていて故障が発生した場合には、修理ではなく新品に交換することをおすすめします。</p>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="accordion-3">
+                    <div class="accordion-header" onclick="toggleAccordion('accordion-3')">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i class="fas fa-question-circle text-blue-500 mr-2"></i>給湯器を交換する際、違うメーカーに変更できる？
+                        </h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="mb-4"><span class="font-bold">違うメーカーへの変更は可能です。</span>ただし、以下のポイントに気をつける必要があります：</p>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>号数（給湯能力）</li>
+                            <li>設置タイプ（壁掛け、PS設置、据置など）</li>
+                            <li>種類（給湯専用、ふろ給湯器、暖房熱源機など）</li>
+                        </ul>
+                        <p class="mt-4">現在設置している給湯器と類似した商品を選ぶと、工事の負担が少なくなります。違うメーカー商品を取り付けたい場合は、交換業者に相談してみましょう。</p>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="accordion-4">
+                    <div class="accordion-header" onclick="toggleAccordion('accordion-4')">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i class="fas fa-question-circle text-blue-500 mr-2"></i>給湯器の取り付けだけを依頼することは可能？
+                        </h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="mb-4"><span class="font-bold">給湯器の取り付けのみを依頼することは可能ですが、対応する企業は全国的にみても少数</span>です。</p>
+                        <p>また、取り付けのみを請け負ってくれる会社が見つかっても、費用が割高になる傾向があります。そのため、給湯器の交換に不慣れな方には、給湯器の購入から設置までを一括で依頼できる業者を選ぶことをおすすめします。</p>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="accordion-5">
+                    <div class="accordion-header" onclick="toggleAccordion('accordion-5')">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i class="fas fa-question-circle text-blue-500 mr-2"></i>給湯器交換にかかる時間はどれくらい？
+                        </h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="mb-4">給湯器交換の標準的な作業時間は、<span class="font-bold">約2〜3時間</span>です。ただし、以下の条件によって変動します：</p>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>給湯器の種類や設置場所</li>
+                            <li>配管の状態や追加工事の有無</li>
+                            <li>古い給湯器の取り外しの難易度</li>
+                        </ul>
+                        <p class="mt-4">エコキュートなど大型の給湯器や、配管の移設が必要な場合は、半日〜1日かかることもあります。</p>
+                    </div>
+                </div>
+                
+                <div class="accordion" id="accordion-6">
+                    <div class="accordion-header" onclick="toggleAccordion('accordion-6')">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i class="fas fa-question-circle text-blue-500 mr-2"></i>給湯器が故障したかどうかの判断方法は？
+                        </h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="mb-4">給湯器の故障を判断するには、<span class="font-bold">エラーコードを確認</span>するのが最も確実です。</p>
+                        <p class="mb-2">エラーコードは、どのメーカーも「000〜999」の数字3桁で表示されています。エラーコードが表示されたら、取扱説明書やインターネットで原因を調べることができます。</p>
+                        <p>また、以下のような症状がある場合も故障の可能性があります：</p>
+                        <ul class="list-disc list-inside ml-2 space-y-1">
+                            <li>お湯が出ない、または水しか出ない</li>
+                            <li>給湯器から異音がする</li>
+                            <li>設定温度にならない</li>
+                            <li>点火しない</li>
+                        </ul>
+                        <p class="mt-4">エラーコードの対処は素人では難しいため、症状が改善しない場合は専門業者に連絡しましょう。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- まとめ -->
+        <section id="section8" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-calendar-alt"></i>まとめ：自分に合った給湯器交換業者を選ぼう
+            </h2>
+            
+            <p class="mb-6">給湯器は毎日使うものであり、壊れたときは緊急で対応となる可能性が高いため、業者選びで失敗はしたくないものです。この記事でご紹介した内容を参考に、自分に合った給湯器交換業者を選びましょう。</p>
+            
+            <div class="highlight-box bg-blue-50 mb-8">
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                    <i class="fas fa-check text-green-500 mr-2"></i>給湯器交換業者を選ぶ際のチェックポイント
+                </h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><span class="font-bold">施工実績が豊富：</span>年間1,000件以上や累計数万件以上の実績がある業者を選びましょう。</li>
+                    <li><span class="font-bold">保証が充実：</span>商品保証と工事保証の両方が充実している業者がおすすめです。</li>
+                    <li><span class="font-bold">対応が迅速：</span>24時間365日対応や、最短30分で駆けつけるなど、緊急時の対応力も重要です。</li>
+                    <li><span class="font-bold">複数の見積もりを取る：</span>最低でも3社以上から見積もりを取り、価格やサービス内容を比較しましょう。</li>
+                    <li><span class="font-bold">口コミや評判を確認：</span>実際に利用した方の声を参考にすることで、施工品質や対応の良さを判断できます。</li>
+                </ul>
+            </div>
+            
+            <div class="point-card">
+                <h3 class="text-xl font-bold mb-3">おすすめの給湯器交換業者</h3>
+                <p class="mb-4">今回ご紹介した給湯器交換業者の中でも、特におすすめなのは以下の3社です：</p>
+                <ol class="list-decimal list-inside space-y-4">
+                    <li><span class="font-bold">キンライサー：</span>
+                        <p class="ml-6 mt-1">全国対応で24時間365日受付、10年間の無料保証が充実しています。最短即日対応も可能で、工事実績も20万件を超える信頼性の高さが魅力です。</p>
+                    </li>
+                    <li><span class="font-bold">街角給湯器：</span>
+                        <p class="ml-6 mt-1">関東・東海・関西・九州エリアに対応し、最大92%OFFの価格設定と最短30分での対応が特徴です。10社のメーカー取扱いと10年保証で安心感があります。</p>
+                    </li>
+                    <li><span class="font-bold">給湯器駆けつけ隊：</span>
+                        <p class="ml-6 mt-1">24都道府県に対応し、最短30分で駆けつけるスピード対応が魅力です。年間施工実績1万件の豊富な経験と10年保証で安心して任せられます。</p>
+                    </li>
+                </ol>
+                <p class="mt-6">給湯器は10年に一度の大きな買い物です。後悔しないためにも、複数の業者から見積もりを取り、自分に合った業者を選びましょう。</p>
+            </div>
+        </section>
+        
+        <!-- 参考文献 -->
+        <div class="bg-gray-100 p-6 rounded-lg mt-8">
+            <h2 class="text-xl font-bold mb-4">参考文献・引用</h2>
+            <ul class="space-y-2">
+                <li>
+                    <a href="https://the-room-tour.com/water-heater-company-ranking/" target="_blank" class="text-sm font-medium flex items-center">
+                        <span class="mr-1">1.</span>
+                        <div class="text-blue-600 hover:underline">給湯器交換はどこに頼む？おすすめ業者ランキング8選</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.kyuutourank.com/" target="_blank" class="text-sm font-medium flex items-center">
+                        <span class="mr-1">2.</span>
+                        <div class="text-blue-600 hover:underline">口コミや保証で選ぶ！おすすめの給湯器取付け設置業者を比較して紹介します</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.sunrefre.jp/gas/ranking/" target="_blank" class="text-sm font-medium flex items-center">
+                        <span class="mr-1">3.</span>
+                        <div class="text-blue-600 hover:underline">ガス給湯器おすすめ人気ランキング・比較</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        function toggleAccordion(id) {
+            const content = document.querySelector(`#${id} .accordion-content`);
+            const icon = document.querySelector(`#${id} .accordion-header i.fas`);
+            
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                icon.classList.remove("fa-chevron-up");
+                icon.classList.add("fa-chevron-down");
+            } else {
+                content.style.display = "block";
+                icon.classList.remove("fa-chevron-down");
+                icon.classList.add("fa-chevron-up");
+            }
+        }
+    </script>
 </body>
 </html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDv9jsL%2B4Mhyd6DY2p2wFH0jUNQyslWirzYADOmJnFy1AsyKdXkBNk%2FG9q8gu68%2BdpHIoNt6%2F2Wuk9ml%2BAxamFh1rJcEn5dX3yJK5sUGIFRS31kEaL0mycfpGuOJhoR4ZuS4culEXZTcGSKiDIUTfXxasGQhcsOylE7tzhIU6btccyXYnHdhQ0iHvBwq3I4Ecn%2Fsgc%2F4%2BuhFZnt2FdJSdm6gxwE8xRBXhVVnrv8BT1HthkXjWQ%2F7%2BH%2FkwDEv9fLiUc7IRgEn5vYVHX58F4ONs7pgJYbiYWD31HwOjQX%2BJD6JgnNlao9gQg%2BN8PgvDWCQFUdbfxQ52a1Z%2BBj7MWAw92bcrH%2F0BsUbgKwN%2B%2BWRZgds4aV1KTcRlvJzVCgbB2%2BDPP4Wa9o1hqoAe4kXCnp0kYpfvsUhCRl9YQhcGafo%2BaUYhVjWBWSlzhAxzXkJ%2Fe2jWimdrdmtpP%2Bq%2B3MjmOfOKosIU5ce6GIwP%2FXSY5samU3P39Ik1JUk2e4Jgm%2Bbtiu0wNA%3D%3D";
+        window.__genspark_locale = "ja-JP";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDv9jsL+4Mhyd6DY2p2wFH0jUNQyslWirzYADOmJnFy1AsyKdXkBNk/G9q8gu68+dpHIoNt6/2Wuk9ml+AxamFh1rJcEn5dX3yJK5sUGIFRS31kEaL0mycfpGuOJhoR4ZuS4culEXZTcGSKiDIUTfXxasGQhcsOylE7tzhIU6btccyXYnHdhQ0iHvBwq3I4Ecn/sgc/4+uhFZnt2FdJSdm6gxwE8xRBXhVVnrv8BT1HthkXjWQ/7+H/kwDEv9fLiUc7IRgEn5vYVHX58F4ONs7pgJYbiYWD31HwOjQX+JD6JgnNlao9gQg+N8PgvDWCQFUdbfxQ52a1Z+Bj7MWAw92bcrH/0BsUbgKwN++WRZgds4aV1KTcRlvJzVCgbB2+DPP4Wa9o1hqoAe4kXCnp0kYpfvsUhCRl9YQhcGafo+aUYhVjWBWSlzhAxzXkJ/e2jWimdrdmtpP+q+3MjmOfOKosIU5ce6GIwP/XSY5samU3P39Ik1JUk2e4Jgm+btiu0wNA==";
+    </script>
+    
+        <script id="html_badge_script2" src="https://www.genspark.ai/html_badge.js"></script>
+        
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
