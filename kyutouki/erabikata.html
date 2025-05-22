@@ -289,6 +289,44 @@
             border-radius: 2px;
             margin-right: 0.5rem;
         }
+
+        .horizontal-chart {
+            background-color: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .horizontal-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .horizontal-bar-label {
+            width: 100px;
+            font-size: 0.875rem;
+            margin-right: 0.75rem;
+        }
+
+        .horizontal-bar-bg {
+            flex: 1;
+            background-color: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+            height: 1.5rem;
+        }
+
+        .horizontal-bar-value {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+            color: #fff;
+            padding-right: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+        }
         
          {
             .container {
@@ -538,37 +576,35 @@
             <div class="mb-8">
                 <h3 class="text-xl font-bold mb-4">給湯器交換業者 総合評価ランキング</h3>
                 
-                <div class="chart mb-6">
-                    <div class="chart-bars">
-                        <div class="chart-bar">
-                            <div class="chart-bar-value bg-red-400" style="height: 96%;">
-                                <div class="p-2 text-white text-center">4.8</div>
-                            </div>
-                            <div class="chart-bar-label">キンライサー</div>
+                <div class="horizontal-chart mb-6">
+                    <div class="horizontal-bar">
+                        <div class="horizontal-bar-label">キンライサー</div>
+                        <div class="horizontal-bar-bg">
+                            <div class="horizontal-bar-value bg-red-400" style="width: 96%;">4.8</div>
                         </div>
-                        <div class="chart-bar">
-                            <div class="chart-bar-value bg-teal-400" style="height: 94%;">
-                                <div class="p-2 text-white text-center">4.7</div>
-                            </div>
-                            <div class="chart-bar-label">街角給湯器</div>
+                    </div>
+                    <div class="horizontal-bar">
+                        <div class="horizontal-bar-label">街角給湯器</div>
+                        <div class="horizontal-bar-bg">
+                            <div class="horizontal-bar-value bg-teal-400" style="width: 94%;">4.7</div>
                         </div>
-                        <div class="chart-bar">
-                            <div class="chart-bar-value bg-yellow-400" style="height: 92%;">
-                                <div class="p-2 text-white text-center">4.6</div>
-                            </div>
-                            <div class="chart-bar-label">給湯器駆けつけ隊</div>
+                    </div>
+                    <div class="horizontal-bar">
+                        <div class="horizontal-bar-label">給湯器駆けつけ隊</div>
+                        <div class="horizontal-bar-bg">
+                            <div class="horizontal-bar-value bg-yellow-400" style="width: 92%;">4.6</div>
                         </div>
-                        <div class="chart-bar">
-                            <div class="chart-bar-value bg-green-400" style="height: 90%;">
-                                <div class="p-2 text-white text-center">4.5</div>
-                            </div>
-                            <div class="chart-bar-label">湯ドクター</div>
+                    </div>
+                    <div class="horizontal-bar">
+                        <div class="horizontal-bar-label">湯ドクター</div>
+                        <div class="horizontal-bar-bg">
+                            <div class="horizontal-bar-value bg-green-400" style="width: 90%;">4.5</div>
                         </div>
-                        <div class="chart-bar">
-                            <div class="chart-bar-value bg-blue-400" style="height: 88%;">
-                                <div class="p-2 text-white text-center">4.4</div>
-                            </div>
-                            <div class="chart-bar-label">正直屋</div>
+                    </div>
+                    <div class="horizontal-bar">
+                        <div class="horizontal-bar-label">正直屋</div>
+                        <div class="horizontal-bar-bg">
+                            <div class="horizontal-bar-value bg-blue-400" style="width: 88%;">4.4</div>
                         </div>
                     </div>
                 </div>
