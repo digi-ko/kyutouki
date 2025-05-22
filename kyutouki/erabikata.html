@@ -929,8 +929,11 @@
                             </div>
                         </div>
                     </div>
+                    <div class="mt-6">
+                        <canvas id="priceChart" width="400" height="300"></canvas>
+                    </div>
                 </div>
-                
+
                 <div>
                     <h3 class="text-xl font-bold mb-4">工事費用の内訳</h3>
                     <div class="chart">
@@ -1533,6 +1536,33 @@
                 icon.classList.add("fa-chevron-up");
             }
         }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const ctx = document.getElementById('priceChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['エコジョーズ', '従来型給湯器', 'エコキュート', '石油給湯器'],
+                    datasets: [{
+                        label: '本体価格（万円）',
+                        data: [18.5, 13, 50, 15.5],
+                        backgroundColor: ['#60a5fa', '#34d399', '#fbbf24', '#a1a1aa']
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: (v) => v + '万円'
+                            }
+                        }
+                    }
+                }
+            });
+        });
     </script>
 </body>
 </html>
